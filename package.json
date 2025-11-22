@@ -1,0 +1,56 @@
+{
+	"name": "webtui-react",
+	"version": "0.1.0",
+	"description": "A React component library based on @webtui/css",
+	"main": "./dist/index.js",
+	"module": "./dist/index.mjs",
+	"types": "./dist/index.d.ts",
+	"exports": {
+		".": {
+			"types": "./dist/index.d.ts",
+			"import": "./dist/index.mjs",
+			"require": "./dist/index.js"
+		},
+		"./styles": "./dist/styles.css"
+	},
+	"files": [
+		"dist"
+	],
+	"scripts": {
+		"build": "tsup",
+		"dev": "tsup --watch",
+		"prepublishOnly": "npm run build"
+	},
+	"keywords": [
+		"react",
+		"tui",
+		"terminal",
+		"ui",
+		"components",
+		"webtui",
+		"text-ui",
+		"ascii",
+		"retro"
+	],
+	"author": "",
+	"license": "MIT",
+	"peerDependencies": {
+		"react": "^18.0.0 || ^19.0.0",
+		"react-dom": "^18.0.0 || ^19.0.0"
+	},
+	"devDependencies": {
+		"@biomejs/biome": "^2.3.7",
+		"@types/node": "^24.10.1",
+		"@types/react": "^19.2.6",
+		"@types/react-dom": "^19.2.3",
+		"add": "^2.0.6",
+		"react": "^19.2.0",
+		"react-dom": "^19.2.0",
+		"tsup": "^8.5.1",
+		"typescript": "^5.9.3"
+	},
+	"dependencies": {
+		"@webtui/css": "^0.1.5",
+		"clsx": "^2.1.1"
+	}
+}
