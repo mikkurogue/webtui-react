@@ -11,11 +11,11 @@ Basically anything from webtui. This is still a work in progress for the sake of
 ## Installation
 
 ```bash
-npm install @tuicss/react
+npm install webtui-react
 # or
-yarn add @tuicss/react
+yarn add webtui-react
 # or
-pnpm add @tuicss/react
+pnpm add webtui-react
 ```
 
 ## Usage
@@ -25,19 +25,19 @@ pnpm add @tuicss/react
 Import the styles in your root component or main entry file:
 
 ```tsx
-import '@tuicss/react/styles';
+import 'wetui-react/styles';
 ```
 
 Or in your main CSS/SCSS file:
 
 ```css
-@import '@tuicss/react/styles';
+@import 'web-react/styles';
 ```
 
 ### Using Components
 
 ```tsx
-import { Button, Input, Badge, Table, TableHeader, TableBody, TableRow, TableHead, TableCell } from '@tuicss/react';
+import { Button, Input, Badge, Table, TableHeader, TableBody, TableRow, TableHead, TableCell } from 'webtui-react';
 
 function App() {
   return (
@@ -84,7 +84,7 @@ Wrap your app with the dark theme attribute:
 Use Row, Column, and Box for TUI-style layouts:
 
 ```tsx
-import { Row, Column, Box, Button } from '@tuicss/react';
+import { Row, Column, Box, Button } from 'webtui-react';
 
 <Column align="center">
   <Row align="between">
@@ -211,7 +211,7 @@ npm install @webtui/theme-vitesse
 Then import them after the base styles:
 
 ```tsx
-import '@tuicss/react/styles';
+import 'webtui-react/styles';
 import '@webtui/theme-catppuccin';
 ```
 
